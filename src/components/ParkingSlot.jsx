@@ -5,7 +5,7 @@ function ParkingSlot() {
     const [slots, setSlots] = useState(8)
     const [booked, setBooked] = useState([])
     function handleClick(e) {
-        const selectedSlot = Number(e.target.firstChild.data)
+        const selectedSlot = e.target.firstChild.data
         if (!booked.includes(selectedSlot)) {
             setBooked((prev) => [...prev, selectedSlot])
             setSlots((prev) => prev - 1)

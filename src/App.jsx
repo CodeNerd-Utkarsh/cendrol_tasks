@@ -7,9 +7,9 @@ function App() {
 
   return (
     <div className="app">
-      <CreateDiv />
-      <ParkingSlot />
       <BreadCrumbs />
+      <ParkingSlot />
+      <CreateDiv />
     </div>
   )
 }
